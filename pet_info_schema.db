@@ -1,0 +1,14 @@
+CREATE DATABASE pet_info;
+
+use pet_info;
+
+CREATE TABLE dogs
+(
+  id              INT unsigned NOT NULL AUTO_INCREMENT, # Unique ID for the record
+  name            VARCHAR(7) NOT NULL,                # Name of the dog
+  walking         VARCHAR(7) NOT NULL,                # How much the dog likes walking
+  dogs            VARCHAR(7) NOT NULL,                # How much the dog likes other dogs
+  kids            VARCHAR(7) NOT NULL,                # How much the dog likes kids
+  cats            VARCHAR(7) NOT NULL,                # How much the dog likes cats
+  PRIMARY KEY     (id)                                # Make the id the primary key
+);
